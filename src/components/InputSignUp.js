@@ -4,22 +4,10 @@ import { CiLogin } from "react-icons/ci";
 export default function InputSignIn() {
   return (
     <Form>
-        <input
-        placeholder="Nome"
-        type="text"
-      />
-      <input
-        placeholder="E-mail"
-        type="email"
-      />
-      <input
-        placeholder="Senha"
-        type="password"
-      />
-            <input
-        placeholder="Confirme sua senha"
-        type="password"
-      />
+      <input placeholder="Nome" type="text" />
+      <input placeholder="E-mail" type="email" />
+      <input placeholder="Senha" type="password" />
+      <input placeholder="Confirme sua senha" type="password" />
       <Button>
         <CiLogin />
         <p>Entrar</p>
@@ -82,8 +70,8 @@ const Button = styled.button`
   @media (max-width: 1000px) {
     height: 45px;
   }
-  :hover{
-    background-color: #C0E1FA;
+  :hover {
+    background-color: #c0e1fa;
     color: #4d9ad2;
   }
 `;

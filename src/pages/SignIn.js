@@ -4,14 +4,16 @@ import InputSignIn from "../components/InputSignIn";
 import { Link } from "react-router-dom";
 
 export default function Login() {
-
   return (
     <Container>
       <Page>
         <img alt="logo" src={Logo} />
         <InputSignIn />
         <Cadastro>
-          <Link to="/sign-up" style={{ textDecoration: "none", color: "#9BC5E5" }}>
+          <Link
+            to="/sign-up"
+            style={{ textDecoration: "none", color: "#9BC5E5" }}
+          >
             <p>Faça seu cadastro!</p>
           </Link>
         </Cadastro>
@@ -26,10 +28,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #C0E1FA;//9BC5E5
+  background-color: #c0e1fa; //9BC5E5
   @media (max-width: 1000px) {
     background-color: #ffffff;
-    }
+  }
 `;
 
 const Page = styled.div`
@@ -46,11 +48,11 @@ const Page = styled.div`
     height: 90%;
   }
   @media (max-width: 1300px) {
-      width: 30%;
-    }
-    @media (max-width: 1300px) {
-      height: 93%;
-    }
+    width: 30%;
+  }
+  @media (max-width: 1300px) {
+    height: 93%;
+  }
   @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px;
@@ -62,7 +64,7 @@ const Page = styled.div`
       width: 50%;
     }
     @media (max-width: 800px) {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
 `;
@@ -75,18 +77,18 @@ const Cadastro = styled.button`
   background-color: #ffffff;
   border: none;
   cursor: pointer;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #9BC5E5;
+  color: #9bc5e5;
   font-size: 20px;
-  p{
+  p {
     margin-left: 10px;
   }
-  
-  :hover{
-    background-color: #D8EAF7;
+
+  :hover {
+    background-color: #d8eaf7;
   }
   @media (max-width: 800px) {
     height: 45px;

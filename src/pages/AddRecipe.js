@@ -3,18 +3,16 @@ import HeaderAdd from "../components/HeaderAdd";
 import InputRecipe from "../components/InputRecipe";
 
 export default function AddRecipe() {
-
-
   return (
-      <>
+    <>
       <HeaderAdd />
       <Container>
-      <RecipeContainer>
-        <InputRecipe/>
-      </RecipeContainer>
+        <RecipeContainer>
+          <InputRecipe />
+        </RecipeContainer>
       </Container>
-      </>
-);
+    </>
+  );
 }
 const Container = styled.main`
   box-sizing: border-box;
@@ -23,11 +21,8 @@ const Container = styled.main`
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding-top: 30%;
+  margin-top: 20vh;
   padding-bottom: 50px;
-@media (max-width: 2500px) {
-  padding-top: 0%;
-}
 `;
 
 const RecipeContainer = styled.div`
@@ -37,7 +32,7 @@ const RecipeContainer = styled.div`
   justify-content: space-around;
   width: 70%;
   height: 800px;
-  background-color: #C0E1FA;
+  background-color: #c0e1fa;
   border-radius: 30px;
   padding: 10px;
 `;

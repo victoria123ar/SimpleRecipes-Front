@@ -4,220 +4,217 @@ import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 
 export default function Recipe() {
-
-
-
   return (
     <>
-    <StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
-        <StyledRecipe>
+      </StyledRecipe>
+      <StyledRecipe>
         <Image>
-        <img alt="Bolo" src={Bolo} />
+          <img alt="Bolo" src={Bolo} />
         </Image>
         <Title>
-            <Text>Bolo de cenoura</Text>
-            <Icon>
+          <Text>Bolo de cenoura</Text>
+          <Icon>
             <AiOutlineHeart />
-            </Icon>
+          </Icon>
         </Title>
-    </StyledRecipe>
+      </StyledRecipe>
     </>
-);
+  );
 }
 const StyledRecipe = styled.div`
-box-sizing: border-box;
-width: 226px;
-height: 282px;
-border-radius: 8px;
-margin: 30px;
-cursor: pointer;
+  box-sizing: border-box;
+  width: 226px;
+  height: 282px;
+  border-radius: 8px;
+  margin: 30px;
+  cursor: pointer;
 `;
 
 const Image = styled.div`
-width: 100%;
-height: 80%;
-img{
+  width: 100%;
+  height: 80%;
+  img {
     width: 100%;
     height: 100%;
-    border-radius:8px;
-}
+    border-radius: 8px;
+  }
 `;
 
 const Title = styled.div`
-width: 100%;
-height: 20%;
-display: flex;
-align-items: center;
-justify-content: space-between;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Text = styled.p`
-border: none;
-font-size: 16px;
-font-weight: 600;
-color: #085C9C;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #085c9c;
 
-:hover{
-  color: #4D9AD2;
-}
-`
+  :hover {
+    color: #4d9ad2;
+  }
+`;
 
 const Icon = styled.div`
-font-size: 22px;
-:hover{
-  color: red;
-}
-`
+  font-size: 22px;
+  :hover {
+    color: red;
+  }
+`;
