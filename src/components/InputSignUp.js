@@ -39,7 +39,7 @@ const Form = styled.form`
   input {
     box-sizing: border-box;
     width: 100%;
-    height: 55px;
+    height: 45px;
     border: 1px solid #4d9ad2;
     border-radius: 8px;
     background-color: #fff;
@@ -62,7 +62,7 @@ const Form = styled.form`
 
 const Button = styled.button`
   width: 100%;
-  height: 55px;
+  height: 45px;
   background-color: #4d9ad2;
   border: none;
   border-radius: 8px;

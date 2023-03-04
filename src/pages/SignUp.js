@@ -37,19 +37,28 @@ const Page = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 25%;
-  height: 85%;
+  width: 80%;
+  height: 90%;
   background-color: #ffffff;
   border-radius: 30px;
   padding: 10px;
+  @media (max-width: 1350px) {
+    height: 100%;
+  }
+  @media (max-width: 1400px) {
+      width: 25%;
+    }
+    @media (max-width: 1300px) {
+      height: 90%;
+    }
   @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px;
   }
   img {
-    width: 60%;
+    width: 50%;
     @media (max-width: 1000px) {
-      width: 40%;
+      width: 20%;
       margin-bottom: 10%;
     }
     @media (max-width: 800px) {
@@ -61,7 +70,7 @@ const Page = styled.div`
 const Cadastro = styled.button`
   margin-top: 10px;
   width: 67%;
-  height: 55px;
+  height: 45px;
   border-radius: 8px;
   background-color: #ffffff;
   border: none;

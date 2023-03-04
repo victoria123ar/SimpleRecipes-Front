@@ -38,10 +38,19 @@ const Page = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 25%;
-  height: 70%;
+  height: 80%;
   background-color: #ffffff;
   border-radius: 30px;
   padding: 10px;
+  @media (max-width: 1350px) {
+    height: 90%;
+  }
+  @media (max-width: 1300px) {
+      width: 30%;
+    }
+    @media (max-width: 1300px) {
+      height: 93%;
+    }
   @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px;

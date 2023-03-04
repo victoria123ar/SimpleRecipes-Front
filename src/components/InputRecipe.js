@@ -25,28 +25,21 @@ export default function InputRecipe() {
       </Title>
       <Ingredients>
       <p>Ingredientes:</p>
-      <input
-        type="text"
-      />
+      <textarea rows="10" cols="50"></textarea>
       </Ingredients>
       <Preparation>
       <p>Modo de preparo:</p>
-        <input
-        type="text"
-      />
+        <textarea rows="10" cols="50"></textarea>
       </Preparation>
+      <Buttons>
       <Image>
-      <p>Imagem:</p>
-        <input
-        placeholder="Escolher arquivo"
-        type="file"
-      />
+      <label for="imagem">Escolha uma imagem</label>
+      <input type="file" id="imagem" accept="image/png, image/jpeg, image/jpg"/>
       </Image>
       <Categories>
-      <p>Categoria</p>
-      <input type="text" id="txt1" name="txt1" />
-<select id="s1" name="s1">
-{categories.map((categoryType) => (
+      <label for="categories">Categorias</label>
+	<select>
+    {categories.map((categoryType) => (
           <option
           key={categoryType[0]}
             name={categoryType[0]}
@@ -55,11 +48,14 @@ export default function InputRecipe() {
             {categoryType[1]}
           </option>
         ))}
-</select>
+	</select>
 </Categories>
+</Buttons>
+    <ContainerButton>
       <Button>
         <p>Adicionar</p>
       </Button>
+      </ContainerButton>
     </Form>
   );
 }
@@ -67,8 +63,6 @@ export default function InputRecipe() {
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   @media (max-width: 1000px) {
     width: 100%;
   }
@@ -77,112 +71,143 @@ const Form = styled.form`
 const Title = styled.input`
 box-sizing: border-box;
     width: 100%;
-    height: 55px;
+    height: 35px;
     border: 1px solid #4d9ad2;
     border-radius: 8px;
     background-color: #fff;
     padding: 0 18px;
     color: #4d9ad2;
     font-size: 14px;
-    font-family: 'Roboto';
-    margin-bottom: 14px;
-    @media (max-width: 1315px) {
-      width: 80%;
-    }
+    margin-bottom: 20px;
     @media (max-width: 1000px) {
       height: 45px;
     }
-  input::placeholder {
-    font-size: 14px;
+  ::placeholder {
+    font-size: 16px;
     color: #4d9ad2;
   }
 `
 
 const Ingredients = styled.div`
-  input {
+  p{
+    font-size: 16px;
+    color: #4490CE;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  textarea {
     box-sizing: border-box;
-    width: 100%;
-    height: 55px;
     border: 1px solid #4d9ad2;
     border-radius: 8px;
     background-color: #fff;
-    padding: 0 18px;
+    padding: 10px;
     color: #4d9ad2;
     font-size: 14px;
-    font-family: 'Roboto';
     margin-bottom: 14px;
-    @media (max-width: 1315px) {
-      width: 80%;
-    }
     @media (max-width: 1000px) {
       height: 45px;
     }
   }
-  input::placeholder {
+  textarea::placeholder {
     font-size: 14px;
     color: #4d9ad2;
   }
 `
 
 const Preparation = styled.div`
-  input {
+  p{
+    font-size: 16px;
+    color: #4490CE;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  textarea {
     box-sizing: border-box;
-    width: 100%;
-    height: 55px;
     border: 1px solid #4d9ad2;
     border-radius: 8px;
     background-color: #fff;
-    padding: 0 18px;
+    padding: 10px;
     color: #4d9ad2;
     font-size: 14px;
-    font-family: 'Roboto';
     margin-bottom: 14px;
-    @media (max-width: 1315px) {
-      width: 80%;
-    }
     @media (max-width: 1000px) {
       height: 45px;
     }
   }
-  input::placeholder {
+  textarea::placeholder {
     font-size: 14px;
     color: #4d9ad2;
   }
+`
+
+const Buttons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `
 
 const Image = styled.div`
-  input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 55px;
-    border: 1px solid #4d9ad2;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 0 18px;
-    color: #4d9ad2;
-    font-size: 14px;
-    font-family: 'Roboto';
-    margin-bottom: 14px;
-    @media (max-width: 1315px) {
-      width: 80%;
-    }
-    @media (max-width: 1000px) {
-      height: 45px;
-    }
+input[type="file"] {
+    display: none;
+}
+label {
+  width: 100%;
+  height: 45px;
+  background-color: #4d9ad2;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  :hover{
+    font-size: 20px;
   }
-  input::placeholder {
-    font-size: 14px;
-    color: #4d9ad2;
-  }
+}
 `
 
 const Categories = styled.button`
+ width: 50%;
+  height: 45px;
+  background-color: #4d9ad2;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  p {
+    margin-left: 10px;
+  }
+  select{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4d9ad2;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 5px;
+  }
+`
 
+const ContainerButton = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const Button = styled.button`
-  width: 100%;
-  height: 55px;
+  width: 50%;
+  height: 45px;
   background-color: #4d9ad2;
   border: none;
   border-radius: 8px;
@@ -190,17 +215,9 @@ const Button = styled.button`
   font-weight: 700;
   color: #fff;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+text-align: center;
   p {
     margin-left: 10px;
-  }
-  @media (max-width: 1315px) {
-    width: 80%;
-  }
-  @media (max-width: 1000px) {
-    height: 45px;
   }
   :hover{
     background-color: #C0E1FA;

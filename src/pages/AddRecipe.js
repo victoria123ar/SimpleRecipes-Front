@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Header from "../components/Header";
+import HeaderAdd from "../components/HeaderAdd";
 import InputRecipe from "../components/InputRecipe";
 
 export default function AddRecipe() {
@@ -7,7 +7,7 @@ export default function AddRecipe() {
 
   return (
       <>
-      <Header />
+      <HeaderAdd />
       <Container>
       <RecipeContainer>
         <InputRecipe/>
@@ -23,9 +23,11 @@ const Container = styled.main`
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding-top: 450px;
+  padding-top: 30%;
   padding-bottom: 50px;
-
+@media (max-width: 2500px) {
+  padding-top: 0%;
+}
 `;
 
 const RecipeContainer = styled.div`
@@ -34,8 +36,8 @@ const RecipeContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 70%;
-  height: 500px;
-  background-color: #E1EFFA;
+  height: 800px;
+  background-color: #C0E1FA;
   border-radius: 30px;
   padding: 10px;
 `;
