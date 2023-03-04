@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { CiLogin } from "react-icons/ci";
 
-export default function ImputSignIn() {
+export default function InputSignIn() {
   return (
     <Form>
       <input

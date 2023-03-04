@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Logo from "../assets/1.png";
-import ImputSignUp from "../components/ImputSignUp";
+import InputSignUp from "../components/InputSignUp";
 import { Link } from "react-router-dom";
 
 export default function Login() {
@@ -9,7 +9,7 @@ export default function Login() {
     <Container>
       <Page>
         <img alt="logo" src={Logo} />
-        <ImputSignUp />
+        <InputSignUp />
         <Cadastro>
           <Link to="/sign-in" style={{ textDecoration: "none", color: "#9BC5E5" }}>
             <p>Já tem cadastro? Faça seu login!</p>
