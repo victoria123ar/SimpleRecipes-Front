@@ -55,14 +55,11 @@ const CategoriesContainer = styled.div`
     padding: 0 10px;
     justify-content: space-between;
   }
-  @media (max-width: 899px) {
-    top: 298px;
-  }
-  @media (max-width: 600px) {
-    top: 293px;
+  @media (max-width: 800px) {
+    top: 350px;
   }
   @media (max-width: 450px) {
-    top: 211px;
+    top: 250px;
   }
 `;
 

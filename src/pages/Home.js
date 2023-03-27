@@ -27,9 +27,12 @@ const StyledRecipes = styled.main`
   height: 100%;
   box-sizing: border-box;
   background-color: #f7f9f6;
-  top: 257px;
-  @media (max-width: 899px) {
-    top: 0px;
+  padding-top: 307px;
+  @media (max-width: 800px) {
+    padding-top: 400px;
+  }
+  @media (max-width: 450px) {
+    padding-top: 300px;
   }
 `;
 
@@ -40,11 +43,8 @@ const Recipes = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 80px;
-  padding-top: 350px;
-  @media (max-width: 770px) {
-    padding: 10px;
-  }
-  @media (max-width: 450px) {
-    padding-top: 250px;
+  padding-top: 50px;
+  @media (max-width: 800px) {
+    padding-top: 20px;
   }
 `;

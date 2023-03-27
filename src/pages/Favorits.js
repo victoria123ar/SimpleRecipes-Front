@@ -8,7 +8,7 @@ export default function AddRecipe() {
     <Container>
         <h1>Receitas salvas</h1>
         <ContainerRecipes>
-            <p>Você ainda não tem nenhuma receita salva</p>
+            <p>Você ainda não tem nenhuma receita salva!</p>
             </ContainerRecipes>
       </Container>
     </>

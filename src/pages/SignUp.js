@@ -3,7 +3,8 @@ import Logo from "../assets/1.png";
 import InputSignUp from "../components/InputSignUp";
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function Register() {
+
   return (
     <Container>
       <Page>
@@ -39,32 +40,32 @@ const Page = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  height: 90%;
+  width: 25%;
+  height: 80%;
   background-color: #ffffff;
   border-radius: 30px;
   padding: 10px;
   @media (max-width: 1350px) {
-    height: 100%;
-  }
-  @media (max-width: 1400px) {
-    width: 25%;
+    height: 90%;
   }
   @media (max-width: 1300px) {
-    height: 90%;
+    width: 30%;
+  }
+  @media (max-width: 1300px) {
+    height: 93%;
   }
   @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px;
   }
   img {
-    width: 50%;
+    margin-bottom: 15px;
+    width: 75%;
     @media (max-width: 1000px) {
-      width: 40%;
-      margin-bottom: 10%;
+      width: 50%;
     }
     @media (max-width: 800px) {
-      margin-bottom: 0px;
+      margin-bottom: 10px;
     }
   }
 `;
@@ -72,7 +73,7 @@ const Page = styled.div`
 const Cadastro = styled.button`
   margin-top: 10px;
   width: 67%;
-  height: 45px;
+  height: 55px;
   border-radius: 8px;
   background-color: #ffffff;
   border: none;
@@ -94,3 +95,4 @@ const Cadastro = styled.button`
     height: 45px;
   }
 `;
+

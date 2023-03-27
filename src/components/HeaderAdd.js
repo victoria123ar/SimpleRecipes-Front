@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logo from "../assets/2.png";
 import { Link } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai"
 
 export default function HeaderAdd() {
   return (
@@ -9,7 +10,14 @@ export default function HeaderAdd() {
         <img alt="logo" src={Logo} />
       </Figure>
       <Grid>
-        <Input type="text" placeholder="Qual receita você procura?"></Input>
+      <Input>
+        <Container>
+          <input type="text" placeholder="Qual receita você procura?" />
+          <Button>
+            <AiOutlineSearch />
+          </Button>
+        </Container>
+        </Input>
         <Buttons>
           <Link to="/sign-in" style={{ textDecoration: "none" }}>
             <button>Entrar</button>
@@ -65,16 +73,27 @@ const Figure = styled.div`
   }
 `;
 
-const Input = styled.input`
-  padding: 7px;
-  border: 1px solid #4d9ad2;
-  box-shadow: 6px 6px rgba(147, 187, 218, 0.2);
-  border-radius: 8px;
+const Container = styled.div`
+float: left;
+width: 60%;
+height: 30px;
+position: relative;
+`
+
+const Input = styled.form`
   width: 60%;
-  height: 30px;
-  font-size: 14px;
-  color: #4d9ad2;
-  ::placeholder {
+  input {
+    padding: 7px;
+    border: 1px solid #4d9ad2;
+    box-shadow: 6px 6px rgba(147, 187, 218, 0.2);
+    border-radius: 8px;
+    width: 80%;
+    height: 100%;
+    font-size: 14px;
+    color: #4d9ad2;
+    float: left;
+  }
+  input::placeholder {
     font-size: 14px;
     color: #4d9ad2;
   }
@@ -90,6 +109,22 @@ const Input = styled.input`
     @media (max-width: 450px) {
       width: 60%;
     }
+  }
+`;
+
+const Button = styled.button`
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  border:none;
+  background:transparent;
+  outline:none;
+  cursor: pointer;
+  line-height: center;
+  font-size: 22px;
+  color: #c0e1fa;
+  :hover{
+    color: #4d9ad2;
   }
 `;
 

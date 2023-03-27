@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logo from "../assets/2.png";
 import { Link } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Header() {
   return (
@@ -9,7 +10,14 @@ export default function Header() {
         <img alt="logo" src={Logo} />
       </Figure>
       <Grid>
-        <Input type="text" placeholder="Qual receita você procura?"></Input>
+        <Input>
+          <Container>
+            <input type="text" placeholder="Qual receita você procura?" />
+            <Button>
+              <AiOutlineSearch />
+            </Button>
+          </Container>
+        </Input>
         <Buttons>
           <Link to="/sign-in" style={{ textDecoration: "none" }}>
             <button>Entrar</button>
@@ -30,24 +38,23 @@ const StyledHeader = styled.header`
   box-sizing: border-box;
   background-color: #e1effa;
   width: 100%;
+  height: 350px;
   position: fixed;
   top: 0;
   padding: 10px 30px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(2, auto);
-  gap: 0 0;
+  display: flex;
   justify-items: center;
   align-items: center;
-  @media (min-width: 900px) {
+  @media (min-width: 800px) {
     position: fixed;
     top: 0;
-    grid-template-columns: minmax(25%, 50px) minmax(75%, 80px);
-    gap: 0 0;
-    grid-template-rows: auto;
+    height: 257px;
     justify-items: center;
     align-items: center;
     padding: 10px 80px;
+  }
+  @media (max-width: 450px) {
+    height: 250px;
   }
 `;
 
@@ -69,31 +76,72 @@ const Figure = styled.div`
   }
 `;
 
-const Input = styled.input`
-  padding: 7px;
-  border: 1px solid #4d9ad2;
-  box-shadow: 6px 6px rgba(147, 187, 218, 0.2);
-  border-radius: 8px;
+const Container = styled.div`
+  float: left;
   width: 60%;
   height: 30px;
-  font-size: 14px;
-  color: #4d9ad2;
-  ::placeholder {
+  position: relative;
+`;
+
+const Input = styled.form`
+  max-width: 400px;
+  min-width: 350px;
+  input {
+    padding: 7px;
+    border: 1px solid #4d9ad2;
+    box-shadow: 6px 6px rgba(147, 187, 218, 0.2);
+    border-radius: 8px;
+    max-width: 400px;
+    min-width: 350px;
+    height: 100%;
+    font-size: 14px;
+    color: #4d9ad2;
+    float: left;
+    @media (max-width: 450px) {
+      max-width: 300px;
+      min-width: 250px;
+    }
+  }
+  input::placeholder {
     font-size: 14px;
     color: #4d9ad2;
   }
   @media (max-width: 800px) {
-    width: 70%;
+    max-width: 400px;
+    min-width: 350px;
+    position: absolute;
+    left: calc(50% - 175px);
+    top: 300px;
     ::placeholder {
       font-size: 12px;
     }
     @media (max-width: 600px) {
       margin-right: 15px;
-      width: 70%;
+      max-width: 400px;
+      min-width: 350px;
     }
     @media (max-width: 450px) {
-      width: 60%;
+      max-width: 300px;
+      min-width: 250px;
+      left: calc(50% - 125px);
+      top: 205px;
     }
+  }
+`;
+
+const Button = styled.button`
+  position: absolute;
+  right: -65%;
+  top: 10%;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  line-height: center;
+  font-size: 22px;
+  color: #c0e1fa;
+  :hover {
+    color: #4d9ad2;
   }
 `;
 
